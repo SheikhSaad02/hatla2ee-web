@@ -1,0 +1,23 @@
+.btnGradient {
+    background: linear-gradient(95deg, rgba(134, 207, 253, 0.1) 0%, rgba(172, 182, 229, 0.4) 50%, rgba(134, 207, 253, 0.1) 100%);
+    background-size: 200% auto;
+    color: var(--text-base);
+    border: 1px solid var(--gray-50);
+    transition: background-position 0.5s ease-in-out;
+    background-position: 0% 0;
+    box-shadow: 0px 0px 2px 0px #00000012 inset;
+}
+
+.btnGradient:hover {
+    background-position: 100% 0;
+}
+
+:global([dir="rtl"]) .btnGradient {
+    background: linear-gradient(265deg, rgba(134, 207, 253, 0.1) 0%, rgba(172, 182, 229, 0.4) 50%, rgba(134, 207, 253, 0.1) 100%);
+    background-size: 200% auto;
+    background-position: 100% 0;
+}
+
+:global([dir="rtl"]) .btnGradient:hover {
+    background-position: 0% 0;
+}

@@ -1,0 +1,33 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "62M8D3C338.com.hatla2ee",
+                    "62M8D3C338.com.hatla2ee.stage"
+                ],
+                "components": [
+                    {
+                        "/": "/api/surge/auth/confirmation",
+                        "exclude": true,
+                        "comment": "Path starts with /api/surge/auth/confirmation (any query string)"
+                    },
+                    {
+                        "/": "/*/api/surge/auth/confirmation",
+                        "exclude": true,
+                        "comment": "Path has one segment then /api/surge/auth/confirmation (e.g. /en/api/...)"
+                    },
+                    {
+                        "/": "/*",
+                        "comment": "Match all other paths"
+                    }
+                ]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "62M8D3C338.com.hatla2ee"
+        ]
+    }
+}

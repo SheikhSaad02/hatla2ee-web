@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Buy Online Credit Packages to Sell Cars Faster | Hatla2ee Egypt",
+    "description": "Buy online credit packages on Hatla2ee to promote your car listings with Turbo, Premium, Silver, and Pump features. Reach more buyers, sell faster, and manage your advertising credits with flexible packages.",
+    "h1": "Everything You Need to Sell Your Car Faster",
+    "ogTitle": "Hatla2ee Credits — More Ads, Better Value",
+    "ogDescription": "Two Credit packages built for sellers and showrooms. Up to 20% saved, valid for 90 days."
+  },
+  "hero": {
+    "h1": "Everything You Need to Sell Your Car Faster",
+    "subline": "Discover how Hatla2ee Credits work, explore our packages, and choose the right option to reach more buyers.",
+    "cta": "See the packages"
+  },
+  "stats": {
+    "value1": "1M+",
+    "label1": "Potential Buyers",
+    "value2": "100+",
+    "label2": "Leads Per Listing",
+    "value3": "2.6M+",
+    "label3": "Cars Listed",
+    "value4": "1.7M+",
+    "label4": "Cars Sold"
+  },
+  "tabs": {
+    "credits": "How It Works",
+    "products": "Ad Visibility",
+    "packages": "Credit Packages",
+    "trustedSellers": "Trusted Sellers",
+    "faq": "Learn More",
+    "ariaLabel": "Page sections"
+  },
+  "credits": {
+    "heading": "Introducing <secondary>Hatla2ee Credits</secondary>",
+    "subheading": "What are Hatla2ee Credits",
+    "body": "Hatla2ee Credits are used to pay for services on the site. Use them to list your car, boost your ad, and get more visibility. The more Hatla2ee Credits you buy, the more value you get.",
+    "card1Title": "Post more cars",
+    "card1Body": "Use your Credits to list multiple cars from one balance.",
+    "card2Title": "Boost your ads",
+    "card2Body": "Upgrade your listings to get more visibility and reach more buyers.",
+    "card3Title": "Move up the ranks",
+    "card3Body": "Use Credits to push your ads higher and stay where buyers can see them.",
+    "card4Title": "Sell with more flexibility",
+    "card4Body": "Spend your Credits when and where your listings need them most."
+  },
+  "products": {
+    "heading": "Explore your Ad Options",
+    "costNote": "Save up to 25% with Hatla2ee Credits",
+    "egp": "EGP",
+    "creditsLabel": "Credits",
+    "costFooter": "1 EGP = 1 Hatla2ee Credit",
+    "mockAlt": "Sample car listing photo",
+    "silver": {
+      "name": "Silver",
+      "headline": "Get Started with a Silver Ad",
+      "desc": "Post your ad as a basic listing for 90 days.",
+      "point1": "Easy to get started",
+      "point2": "Reach active buyers",
+      "point3": "Upgrade anytime"
+    },
+    "premium": {
+      "name": "Premium",
+      "headline": "Premium Placement for Top Results",
+      "desc": "Stay at the top in the Premium slot for 10 days, then continue as a basic ad for 80 days.",
+      "point1": "Top 15 placement",
+      "point2": "Higher visibility",
+      "point3": "More chances to get contacted"
+    },
+    "turbo": {
+      "name": "Turbo",
+      "headline": "Dominate the Top Spot",
+      "desc": "Turbo puts your ad above all for 10 days, then stays as a Silver ad for 80 days.",
+      "point1": "Top 5 placement",
+      "point2": "Highest visibility",
+      "point3": "More chances to get contacted"
+    },
+    "pump": {
+      "name": "Pump",
+      "headline": "Boost Your Ad to the Top",
+      "desc": "Boost your ad on days 3, 4 & 5 to get noticed",
+      "point1": "Boost your current position",
+      "point2": "Refresh your ad's visibility",
+      "point3": "Reach more potential buyers"
+    }
+  },
+  "packages": {
+    "heading": "Flexible Credit Packages Designed for You",
+    "expertName": "Expert",
+    "expertTagline": "Best for individual sellers and small lots",
+    "highlineName": "Highline",
+    "highlineTagline": "Best for dealers and busy showrooms",
+    "creditsAmount": "{total} Hatla2ee Credits",
+    "ratePerCredit": "{rate} EGP per Hatla2ee Credit",
+    "validity": "Valid for {days} days",
+    "cta": "Choose {package}",
+    "savedBadge": "{percent}% Saved",
+    "egp": "EGP",
+    "chooseError": "Something went wrong. Please try again."
+  },
+  "promo": {
+    "heading": "Not Sure Which Ad Option Is Right for You?",
+    "body": "Our team is here to help. Learn how Hatla2ee Credits can help you promote your ad and reach more buyers.",
+    "cta": "Contact Support"
+  },
+  "testimonials": {
+    "heading": "Hear from Sellers Like You",
+    "counter": "{current} / {total}",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial"
+  },
+  "showrooms": {
+    "heading": "Trusted by the Showrooms Across Egypt",
+    "carsCount": "{count} Cars",
+    "featured": "Featured"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "q1": "What exactly is a Hatla2ee Credit?",
+    "a1": "Hatla2ee Credits are the currency you spend on advertising products like Turbo, Premium, Silver and Pump. One Hatla2ee Credit is worth one Egyptian pound at the standard rate, and a package simply gives you more of them for the same money.",
+    "q2": "How do bonus Hatla2ee Credits work?",
+    "a2": "The bonus is added on top of what you pay for. Expert adds 600 extra Hatla2ee Credits (20%) and Highline adds 1,120 (25%). Bonus Hatla2ee Credits behave exactly like paid ones and work on any product.",
+    "q3": "When are Hatla2ee Credits added to my account?",
+    "a3": "Instantly. The moment your payment is confirmed, the full balance including the bonus is in your wallet and ready to spend on your next ad.",
+    "q4": "How long do package Hatla2ee Credits stay valid?",
+    "a4": "Package Hatla2ee Credits are valid for 90 days from the date of purchase. You can see the remaining balance and the expiry date any time in your seller wallet.",
+    "q5": "Can I still top up the exact amount I need?",
+    "a5": "Yes. Pay-as-you-go top-ups are unchanged. Packages are simply an optional way to pay a lower rate per Hatla2ee Credit when you advertise regularly.",
+    "q6": "Which payment methods are accepted?",
+    "a6": "You can pay by Visa, Mastercard or Meeza, and through the local wallets supported at checkout. Every purchase includes a receipt you can download.",
+    "q7": "What is the refund policy?",
+    "a7": "Unused package Hatla2ee Credits can be refunded within 14 days of purchase, as long as no bonus Hatla2ee Credits from that package have been spent. Contact support and we will return it to your original payment method."
+  }
+}

@@ -1,0 +1,328 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import './common.css';
+@import './sprite.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Spotlit element: matches the element carrying data-spotlight="true" and
+   anything inside it. Lets a card write `spotlight:text-gray-900` instead of
+   repeating `group-data-[...]:` on every child. Deliberately not keyed on
+   data-active, which tabs and pagination already use for their own state. */
+@custom-variant spotlight (&:is([data-spotlight='true'], [data-spotlight='true'] *));
+
+:root:lang(ar) {
+  direction: rtl;
+}
+
+:root:lang(en) {
+  direction: ltr;
+}
+
+[dir='rtl'] {
+  direction: rtl;
+}
+
+[dir='ltr'] {
+  direction: ltr;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+:root {
+  /* Grey colors */
+  --gray-50: oklch(0.9809 0.0025 228.78); /* #f7f9fa; Background Light */
+  --gray-100: oklch(0.9551 0 0); /* #f0f0f0; Background */
+  --gray-200: oklch(0.9249 0 0); /* #e6e6e6; */
+  --gray-300: oklch(0.9006 0 0); /* #dedede; Border */
+  --gray-400: oklch(0.696 0 0); /* #9d9d9d; */
+  --gray-500: oklch(0.5452 0 0); /* #707070; */
+  --gray-600: oklch(0.4962 0 0); /* #626262; */
+  --gray-700: oklch(0.4276 0 0); /* #4f4f4f; gray-dark */
+  --gray-800: oklch(0.252 0 0); /* #222222; */
+
+  --background: oklch(1 0 0); /* #ffffff */
+  --foreground: var(--gray-800); /* #222222 */
+
+  --primary: oklch(0.4876 0.1063 257.83); /* #3160A5 */
+  --primary-foreground: oklch(0.985 0.02 278.56); /* #fbf5ff */
+  --secondary: oklch(0.8394 0.1664 93.47); /* #EFC801 */
+  --secondary-foreground: var(--foreground); /* #222222 */
+
+  --card: oklch(1 0 0); /* #ffffff */
+  --card-foreground: var(--foreground); /* #222222 */
+  --popover: oklch(1 0 0); /* #ffffff */
+  --popover-foreground: var(--foreground); /* #222222 */
+
+  --muted: var(--gray-100); /* #f0f0f0 */
+  --muted-foreground: var(--foreground); /* #222222 */
+
+  --accent: var(--gray-100); /* #f0f0f0 */
+  --accent-foreground: var(--foreground); /* #222222 */
+
+  --destructive: oklch(0.63 0.2314 26.98); /* #f73131 */
+
+  /* --border: oklch(0.9551 0 0); #f4f4f4 */
+
+  --input: oklch(0.9 0.01 278.56); /* #f8f6fd */
+  --ring: oklch(0.6 0.05 278.56); /* #f2ecfe */
+  --chart-1: oklch(0.646 0.222 41.116); /* #cc662e */
+  --chart-2: oklch(0.6 0.118 184.704); /* #ac8af5 */
+  --chart-3: oklch(0.398 0.07 227.392); /* #8677ec */
+  --chart-4: oklch(0.828 0.189 84.429); /* #f3ce24 */
+  --chart-5: oklch(0.769 0.188 70.08); /* #dcc012 */
+  --sidebar: oklch(0.985 0.02 278.56); /* #fbf5ff */
+  --sidebar-foreground: var(--foreground); /* #222222 */
+  --sidebar-primary: oklch(0.327 0.124 278.56); /* #955ad9 */
+  --sidebar-primary-foreground: oklch(0.985 0.02 278.56); /* #fbf5ff */
+  --sidebar-accent: oklch(0.95 0.01 278.56); /* #fbf5ff */
+  --sidebar-accent-foreground: oklch(0.2 0.05 278.56); /* #b2a3ae */
+  --sidebar-border: oklch(0.9 0.01 278.56); /* #f8f6fd */
+  --sidebar-ring: oklch(0.6 0.05 278.56); /* #f2ecfe */
+}
+
+@theme {
+  /* Primary colors */
+  --color-primary-50: oklch(0.9809 0.0091 259.01); /* #F5F9FF */
+  --color-primary-100: oklch(0.9653 0.0142 259.35); /* #EDF4FF */
+  --color-primary-200: oklch(0.9342 0.0281 258.87); /* #E0EDFF */
+  --color-primary-300: oklch(0.8976 0.0419 257.63); /* #D1E4FF */
+  --color-primary-400: oklch(0.8461 0.0567 251.65); /* #BFD6F6 */
+  --color-primary-500: oklch(0.7552 0.0851 249.87); /* #97B7E3 */
+  --color-primary-600: oklch(0.6824 0.0785 249.11); /* #7B9ED1 */
+  --color-primary-700: oklch(0.5974 0.0971 251.44); /* #608ED0 */
+  --color-primary-800: oklch(0.4876 0.1063 257.83); /* #3160A5 */
+  --color-primary-900: oklch(0.2634 0.0439 260.14); /* #13253F */
+
+  /* Secondary colors */
+  --color-secondary-50: oklch(0.9856 0.0179 100.23); /* #FFFCEE */
+  --color-secondary-100: oklch(0.9773 0.0287 99.75); /* #FFFADF */
+  --color-secondary-200: oklch(0.9639 0.0462 99.1); /* #FFF7CA */
+  --color-secondary-300: oklch(0.9498 0.0608 98.42); /* #FFF4B8 */
+  --color-secondary-400: oklch(0.9246 0.0863 97.83); /* #FDED97 */
+  --color-secondary-500: oklch(0.9031 0.1165 97.19); /* #FFE76E */
+  --color-secondary-600: oklch(0.8394 0.1664 93.47); /* #EFC801 */
+  --color-secondary-700: oklch(0.7798 0.1487 92.65); /* #D9B500 */
+
+  /* Danger colors */
+  --color-danger-300: oklch(0.91 0.0437 17.99); /* #fdd6d6; */
+  --color-danger-500: oklch(0.78 0.1192 20.12); /* #fb9898; */
+  --color-danger-700: oklch(0.63 0.2314 26.98); /* #f73131; */
+
+  /* Grey colors */
+  --color-gray-50: var(--gray-50); /* #f7f9fa; Background Light */
+  --color-gray-100: var(--gray-100); /* #f0f0f0; Background */
+  --color-gray-200: var(--gray-200); /* #e6e6e6; */
+  --color-gray-300: var(--gray-300); /* #dedede; Border */
+  --color-gray-400: var(--gray-400); /* #9d9d9d; */
+  --color-gray-500: var(--gray-500); /* #707070; */
+  --color-gray-600: var(--gray-600); /* #626262; */
+  --color-gray-700: var(--gray-700); /* #4f4f4f; gray */
+  --color-gray-800: var(--gray-800); /* #222222; */
+
+  /* Text Colors */
+
+  /* ⚪ Light Grays – backgrounds, surfaces */
+  --color-surface-lightest: var(--gray-50); /* #f7f9fa; Background Light */
+  --color-surface-muted: var(--gray-100); /* #f0f0f0; Background */
+  --color-surface: var(--gray-200); /* #e6e6e6; */
+  --color-border: var(--gray-300); /* #dedede; Border */
+
+  /* ⚙️ Mid Grays – for text, placeholders */
+  --color-disabled: var(--gray-400); /* #9d9d9d; */
+  --color-gray-light: var(--gray-500); /* #707070; */
+  --color-dim: var(--gray-600); /* #626262; */
+  --color-gray: var(--gray-700); /* #4f4f4f; gray */
+
+  /* ⚫ Base text */
+  /* --text-base:        var(--gray-800); #222222; */
+
+  /* Semantic colors (frequently used) */
+  --color-primary: var(--primary); /* Same as --color-primary-800 */
+  --color-secondary: var(--secondary); /* Same as --color-secondary-600 */
+  --color-danger: oklch(0.63 0.2314 26.98); /* Same as --color-danger-700 */
+
+  /* Container sizes */
+  --container-6xl: 75rem; /* 1200px */
+
+  /* Shadow */
+  --shadow-sm: 0px 0px 6px 0px #00000029;
+  --shadow-xs: 0px 4px 7px 0px #00000012;
+
+  --shadow-inner: 0px 0px 2px 0px #00000012 inset;
+  /*button shadow*/
+  --shadow-btn: 0px 0px 6px 0px #0000001a;
+
+  /* Radius */
+  --radius-2.5xl: 1.25rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* --text-4xl: 2rem; /* 32px - overrides default tailwinds 36px * /
+  --text-4xl--line-height: 40px;
+  --text-3xl: 1.75rem; /* 28px - overrides default tailwinds 30px * /
+  --text-3xl--line-height: 36px;
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: 14px; */
+
+  --text-2xs: 0.625rem;
+  --text-3xl: 1.75rem;
+  --text-3.5xl: 2rem;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200 outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground lg:overflow-x-hidden;
+  }
+
+  .fs-body {
+    @apply text-sm lg:text-base;
+  }
+}
+
+@layer components {
+  /* Shared colour cross-fade for elements that dim when their slide is inactive. */
+  .fade-500 {
+    @apply transition-colors duration-500;
+  }
+
+  .card {
+    @apply rounded-2xl overflow-hidden transition-shadow duration-300 group-hover:shadow-xl;
+  }
+
+  .card-light {
+    @apply rounded-md border-none shadow-none;
+  }
+
+  .price-card {
+    @apply flex flex-col rounded-sm p-3 gap-2 h-auto min-w-80 text-left text-xs font-normal shadow-none;
+  }
+
+  .priceBlock {
+    @apply flex flex-col gap-1 bg-gray-50 p-2 rounded-sm w-full h-full justify-center rtl:text-right;
+  }
+
+  .tabsTrigger {
+    @apply items-center justify-center whitespace-nowrap
+           text-sm lg:text-base px-4 py-2 lg:px-5 lg:py-3 cursor-pointer
+           ring-offset-background
+           relative rounded-none border-b-2 border-b-transparent
+           bg-transparent text-gray-500 shadow-none
+           transition-none
+           focus-visible:ring-2
+           focus-visible:ring-ring
+           focus-visible:outline-none
+           focus-visible:ring-offset-2
+           data-[state=active]:font-bold
+           data-[state=active]:bg-background
+           data-[state=active]:border-b-primary
+           data-[state=active]:text-primary
+           data-[state=active]:shadow-none
+           disabled:opacity-50
+           disabled:pointer-events-none;
+  }
+  .inputField {
+    @apply file:text-foreground placeholder:text-gray-400
+         selection:bg-primary selection:text-primary-foreground
+         dark:bg-input/30 border-input flex w-full min-w-0
+         h-full
+         rounded-md border bg-transparent
+         transition-[color,box-shadow] outline-none
+         file:inline-flex file:h-7 file:border-0 file:bg-transparent
+         file:text-sm file:font-medium
+         disabled:pointer-events-none disabled:cursor-not-allowed
+         disabled:opacity-50
+         focus-visible:border-ring focus-visible:ring-ring/50
+         focus-visible:ring-[3px]
+         aria-invalid:ring-destructive/20
+         dark:aria-invalid:ring-destructive/40
+         aria-invalid:border-destructive;
+  }
+
+  .inputField[type='tel'] {
+    direction: ltr;
+    text-align: right;
+  }
+
+  .inputField[type='tel']::placeholder {
+    direction: rtl;
+  }
+
+  :root:lang(en) .inputField[type='tel'] {
+    text-align: left;
+  }
+
+  .sectionHeading {
+    @apply text-[18px] lg:text-[28px] font-semibold mb-3 lg:mb-4;
+  }
+}
+
+.dark {
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.fixed-bottom-bar {
+  @apply fixed bottom-0 left-0 w-full bg-white z-50 p-4 shadow-sm;
+}
+
+.heroHeading {
+  @apply text-xl md:text-[32px] lg:text-[44px] w-full lg:leading-[65px] font-bold text-white;
+}
+
+.bannerBtn {
+  @apply h-10 lg:text-base lg:h-14 lg:font-bold px-4 md:px-6 rounded-md lg:rounded-lg;
+}
+
+.login-fields {
+  @apply h-13 md:h-15  text-sm md:text-base rounded-md lg:rounded-lg;
+}
+.closeBtn {
+  @apply cursor-pointer opacity-70  z-50 p-1 rounded-md border border-primary-300 bg-white/70 hover:bg-gray-50 shadow-inner transition-colors  before:content-[''] before:absolute before:inset-0 before:scale-150;
+}

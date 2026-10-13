@@ -1,0 +1,60 @@
+.bottomNavContainer {
+  --block-width: 26;
+  --block-height: 26;
+  --scale: 0.684; /* 26/38 */
+  background: var(--footer-nav);
+  width: calc(var(--block-width) * 1px);
+  height: calc(var(--block-height) * 1px);
+  background-repeat: no-repeat;
+  background-size: calc(228px * var(--scale)) auto;
+}
+
+.home {
+  background-position: calc(var(--block-width) * 0 * -1px)
+    calc(var(--block-height) * 0 * -1px);
+}
+.usedcar {
+  background-position: calc(var(--block-width) * 1 * -1px)
+    calc(var(--block-height) * 0 * -1px);
+}
+.sellNow {
+  background-position: calc(var(--block-width) * 2 * -1px)
+    calc(var(--block-height) * 0 * -1px);
+}
+.newcar {
+  background-position: calc(var(--block-width) * 3 * -1px)
+    calc(var(--block-height) * 0 * -1px);
+}
+.more {
+  background-position: calc(var(--block-width) * 4 * -1px)
+    calc(var(--block-height) * 0 * -1px);
+}
+.myAds {
+  background-position: calc(var(--block-width) * 5 * -1px)
+    calc(var(--block-height) * 0 * -1px);
+}
+
+.home-active {
+  background-position: calc(var(--block-width) * 0 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}
+.usedcar-active {
+  background-position: calc(var(--block-width) * 1 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}
+.sellNow-active {
+  background-position: calc(var(--block-width) * 2 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}
+.newcar-active {
+  background-position: calc(var(--block-width) * 3 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}
+.more-active {
+  background-position: calc(var(--block-width) * 4 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}
+.myAds-active {
+  background-position: calc(var(--block-width) * 5 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}

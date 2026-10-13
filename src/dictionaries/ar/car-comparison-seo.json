@@ -1,0 +1,17 @@
+{
+  "compareLandingPageTitle": "مقارنة السيارات في {country} | قارن السيارات الجديدة",
+  "compareLandingPageDescription": "استخدم اداة مقارنة السيارات في هتلاقي لمقارنة السيارات الجديدة في {country}. احصل على مقارنة تفصيلية بين المواصفات والاسعار.",
+  "compareLandingPageH1": "قارن السيارات الجديدة في {country}",
+  "compareDetailTitle": "قارن بين {carsTitle}",
+  "compareDetailDescription": "قارن بين {carsTitle} من حيث المواصفات والاسعار. شاهد مقارنة تفصيلية لمساعدتك في اتخاذ القرار.",
+  "Compare": "مقارنه و فروقات",
+  "h1_compare": "مقارنة و فروقات",
+  "vs": "و",
+  "Car": "السيارات",
+  "Trucks": "سيارات نقل",
+  "Truck": "سيارات النقل",
+  "Bus": "أتوبيسات",
+  "Motorcycle": "موتوسيكلات",
+  "Popular Side-by-Side New Car Comparisons": "مقارنه وفروقات {vehicle} الجديدة",
+  " - ": " و "
+}

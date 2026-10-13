@@ -1,0 +1,34 @@
+{
+  "meta_titles": {
+    "new_car_for_sale": "{prefix} {baseTitle} For Sale",
+    "new_car_for_sale_no_prefix": "{baseTitle} For Sale",
+    "custom_title_with_suffix": "{customTitle} {carId} - Car For Sale",
+    "custom_title_simple": "{customTitle} {carId}",
+    "used_car_with_suffix": "{baseTitle} - Car For Sale",
+    "used_car_simple": "{baseTitle}"
+  },
+  "h1_titles": {
+    "new_car_without_name": "{baseTitle} For Sale",
+    "imported_new_car": "Imported New {brandName} {modelName} {versionOrYear} For Sale {cityName}",
+    "imported_used_car": "Imported Used {brandName} {modelName} {versionOrYear} For Sale {cityName}",
+    "used_car": "Used {brandName} {modelName} {versionOrYear} For Sale {cityName}"
+  },
+  "meta_descriptions": {
+    "used_car": "Make {brandName}, Model: {modelName}, version: {version} year: {year}, color: {colorName} for sell in {cityName}, for {price}, published: {publishedDate} on Hatla2ee.com"
+  },
+  "breadcrumbs": {
+    "new_car": "New Car",
+    "cars_for_sale": "Cars For Sale",
+    "cars_for_sale_home": "Cars For sale",
+    "used_cars": "Used Cars",
+    "imported_new_car": "Imported New Car",
+    "imported_cars": "Imported Cars",
+    "brand_new": "{brandName} New",
+    "brand_model_new": "{brandName} {modelName} New",
+    "variant_new": "{variantName} New"
+  },
+  "common": {
+    "imported_prefix": "Imported : ",
+    "for_sale": "For Sale"
+  }
+}

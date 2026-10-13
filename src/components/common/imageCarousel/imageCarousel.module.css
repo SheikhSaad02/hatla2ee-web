@@ -1,0 +1,53 @@
+.carouselWrapper {
+  position: relative;
+}
+
+.carouselItem {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 3;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* .arrowGroup {
+  position: relative;
+} */
+
+.carouselPrev,
+.carouselNext {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  pointer-events: auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: unset;
+  opacity: 0;
+  transition: opacity 0.2s;
+  translate: none;
+  @media (max-width: 600px) {
+    opacity: 1;
+  }
+}
+
+[dir='rtl'] .carouselPrev {
+  transform: rotate(180deg);
+}
+
+[dir='rtl'] .carouselNext {
+  transform: rotate(180deg);
+}
+
+.carouselWrapper:hover .carouselPrev,
+.carouselWrapper:hover .carouselNext {
+  opacity: 1;
+}
+
+.carouselWrapper:hover .carouselPrev:disabled,
+.carouselWrapper:hover .carouselNext:disabled {
+  opacity: 0.6;
+}

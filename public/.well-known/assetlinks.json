@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.hatla2ee.hatla2ee_egypt",
+        "sha256_cert_fingerprints": [
+          "4C:41:67:DA:7E:F0:A4:3A:4F:46:7E:12:AF:65:E3:A6:B7:AB:F1:FF:03:19:9E:26:9F:8F:5F:8A:EE:BD:13:C6"
+        ]
+      }
+    }
+  ]
+  

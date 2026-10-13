@@ -1,0 +1,42 @@
+/* Rotating conic borders for the device frame. The prototype uses
+   framer-motion; the page adds no motion library, so this is a keyframe. */
+
+@keyframes device-border-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Padding is the border width; the xor mask leaves only the edge. */
+.ring {
+  padding: 3px;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.ringThin {
+  padding: 1.5px;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.sweep {
+  animation: device-border-spin var(--spin-duration, 9s) linear infinite;
+  animation-delay: var(--spin-delay, 0s);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sweep {
+    animation: none;
+  }
+}

@@ -1,0 +1,51 @@
+/*
+This file is not being used after change from bg banner to next image
+*/
+
+.usedCardBanner {
+  position: relative;
+}
+
+.usedCardBanner > * {
+  z-index: 1;
+  position: relative;
+}
+
+.usedCardBanner::before,
+.usedCardBanner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.usedCardBanner::before {
+  z-index: 0;
+  background: linear-gradient(
+    var(--bg-angle, 91.43deg),
+    var(--bg-stops, rgba(17, 27, 39, 0.71) 6.24%, rgba(47, 64, 80, 0) 101.99%)
+  );
+
+  @media (max-width: 600px) {
+    --bg-stops: rgba(17, 27, 39, 0.71) 20%, rgba(47, 64, 80, 0) 80%;
+  }
+}
+
+.usedCardBanner::after {
+  z-index: -1;
+  background: var(--bg-image, url('/assets/landing/used-car-banner.webp'))
+    no-repeat var(--bg-position, center);
+  background-size: var(--bg-size, cover);
+
+  @media (max-width: 600px) {
+    --bg-position: center right -75px;
+    --bg-size: cover;
+  }
+}
+
+html[dir='rtl'] .usedCardBanner::after {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .usedCardBanner::before {
+  --bg-angle: -91.43deg;
+}

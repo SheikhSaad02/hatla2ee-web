@@ -1,0 +1,46 @@
+name: Build and Push
+
+on:
+  push:
+    branches:
+      - 'master'
+    tags:
+      - eg-dev-*
+      - eg-stage-*
+      - eg-live-*
+      - eg-prelive-*
+      - jo-dev-*
+      - jo-stage-*
+      - jo-live-*
+      - jo-prelive-*
+      - ksa-dev-*
+      - ksa-stage-*
+      - ksa-live-*
+      - ksa-prelive-*
+      - kw-dev-*
+      - kw-stage-*
+      - kw-live-*
+      - kw-prelive-*
+      - om-dev-*
+      - om-stage-*
+      - om-live-*
+      - om-prelive-*
+      - qa-dev-*
+      - qa-stage-*
+      - qa-live-*
+      - qa-prelive-*
+      - uae-dev-*
+      - uae-stage-*
+      - uae-live-*
+      - uae-prelive-*
+      - hatla2ee-all-live-*
+      - hatla2ee-all-prelive-*
+
+  pull_request:
+    branches:
+      - 'master'
+
+jobs:
+  build-and-push:
+    uses: SectorLabs/enigma-workflows/.github/workflows/build-and-push.yaml@master
+    secrets: inherit

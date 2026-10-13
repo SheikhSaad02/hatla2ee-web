@@ -1,0 +1,401 @@
+.moreIcon {
+  background: var(--more-icon) no-repeat;
+  background-size: 496px auto;
+}
+
+.specialCondition {
+  --block-width: 62;
+  --block-height: 32;
+  --offset: 32;
+  width: calc(var(--block-width) * 1px);
+  height: calc(var(--block-height) * 1px);
+}
+
+.kasr-zero {
+  background-position-x: calc(var(--block-width) * 0 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.taxi {
+  background-position-x: calc(var(--block-width) * 1 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.financed {
+  background-position-x: calc(var(--block-width) * 2 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.classic {
+  background-position-x: calc(var(--block-width) * 3 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.electric {
+  background-position-x: calc(var(--block-width) * 4 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.imported {
+  background-position-x: calc(var(--block-width) * 5 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.disabled {
+  background-position-x: calc(var(--block-width) * 6 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+/* LP-5349: fuel-type row (bottom of the sprite) — 48px blocks */
+.fuelType {
+  --block-width: 48;
+  --block-height: 46;
+  --offset: 203;
+  width: calc(var(--block-width) * 1px);
+  height: calc(var(--block-height) * 1px);
+}
+
+.fuel-gas {
+  background-position-x: calc(var(--block-width) * 0 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.fuel-diesel {
+  background-position-x: calc(var(--block-width) * 1 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.fuel-natural-gas {
+  background-position-x: calc(var(--block-width) * 2 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.fuel-electric {
+  background-position-x: calc(var(--block-width) * 3 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.fuel-hybrid {
+  background-position-x: calc(var(--block-width) * 4 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.fuel-plug-in-hybrid {
+  background-position-x: calc(var(--block-width) * 5 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.bodyStyles {
+  --block-width: 62;
+  --block-height: 32;
+  --offset: 64;
+  width: calc(var(--block-width) * 1px);
+  height: calc(var(--block-height) * 1px);
+}
+
+.body-coupe {
+  background-position-x: calc(var(--block-width) * 0 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-4x4 {
+  background-position-x: calc(var(--block-width) * 1 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-hatchback {
+  background-position-x: calc(var(--block-width) * 2 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-mpv {
+  background-position-x: calc(var(--block-width) * 3 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-sedan {
+  background-position-x: calc(var(--block-width) * 4 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-suv {
+  background-position-x: calc(var(--block-width) * 5 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-pickup {
+  background-position-x: calc(var(--block-width) * 6 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-microbus {
+  background-position-x: calc(var(--block-width) * 7 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-light-pickup {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 0 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-medium-truck {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 1 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-scooter {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 2 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-standard {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 3 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-tricycle {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 4 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-minibus {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 5 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-van {
+  --offset: 96;
+  background-position-x: calc(var(--block-width) * 6 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+.body-minivan {
+  --offset: 0;
+  background-position-x: calc(var(--block-width) * 0 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-convertible {
+  --offset: 0;
+  background-position-x: calc(var(--block-width) * 1 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.body-pickup {
+  --offset: 0;
+  background-position-x: calc(var(--block-width) * 2 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.filterTabs {
+  --block-width: 32;
+  --block-height: 26;
+  --offset: 128;
+  width: calc(var(--block-width) * 1px);
+  height: calc(var(--block-height) * 1px);
+  display: inline-flex;
+}
+
+.brands {
+  background-position-x: calc(var(--block-width) * 0 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.prices {
+  background-position-x: calc(var(--block-width) * 1 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.bStyle {
+  background-position-x: calc(var(--block-width) * 2 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.sCondition {
+  background-position-x: calc(var(--block-width) * 3 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.ccRange {
+  background-position-x: calc(var(--block-width) * 4 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.modelInfo {
+  background-position-x: calc(var(--block-width) * 5 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.modelModel {
+  background-position-x: calc(var(--block-width) * 6 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.modelYear {
+  background-position-x: calc(var(--block-width) * 7 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+.modelClass {
+  background-position-x: calc(var(--block-width) * 8 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+.modelCity {
+  background-position-x: calc(var(--block-width) * 9 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+.modelSubplace {
+  background-position-x: calc(var(--block-width) * 10 * -1px);
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.minPriceRange,
+.maxPriceRange {
+  --icon-size: 24px;
+  --offset: 122;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: inline-flex;
+  background-size: 248px auto;
+}
+
+.minPriceRange {
+  background-position-x: -24px;
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.maxPriceRange {
+  background-position-x: 0;
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.maxPriceRangeDetail,
+.minPriceRangeDetail {
+  --icon-size: 48px;
+  --offset: 155;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: inline-flex;
+}
+
+.maxPriceRangeDetail {
+  background-position-x: 0;
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+.minPriceRangeDetail {
+  background-position-x: -48px;
+  background-position-y: calc(var(--offset) * -1px);
+}
+
+/*************** Brands Icons ***************/
+
+.vehicleContainer {
+  --block-size: 40;
+  --total-blocks: 24;
+  @media (max-width: 600px) {
+    --block-size: 30;
+  }
+  background: var(--vehicle-container);
+  width: calc(var(--block-size) * 1px);
+  height: calc(var(--block-size) * 1px);
+  background-repeat: no-repeat;
+  background-size: calc(var(--block-size) * var(--total-blocks) * 1px) auto;
+}
+.vehicleFinancing {
+  background-position: calc(var(--block-size) * -1px) 0;
+}
+.vehicleUsed {
+  background-position: calc(var(--block-size) * -2px) 0;
+}
+.vehicleEvaluation {
+  background-position: calc(var(--block-size) * -0px) 0;
+}
+.vehicleComparison {
+  background-position: calc(var(--block-size) * -3px) 0;
+}
+.vehicleShowroomUsed {
+  background-position: calc(var(--block-size) * -4px) 0;
+}
+.vehicleShowroomNew {
+  background-position: calc(var(--block-size) * -6px) 0;
+}
+
+.vehicleShowroomAuthrized {
+  background-position: calc(var(--block-size) * -5px) 0;
+}
+
+.vehicleReviews {
+  background-position: calc(var(--block-size) * -7px) 0;
+}
+
+.vehicleLatestNews {
+  background-position: calc(var(--block-size) * -8px) 0;
+}
+
+.vehicleNewtruck {
+  background-position: calc(var(--block-size) * -9px) 0;
+}
+.vehicleNewtruckprice {
+  background-position: calc(var(--block-size) * -12px) 0;
+}
+.vehicleNewbuses {
+  background-position: calc(var(--block-size) * -10px) 0;
+}
+
+.vehicleNewbusprices {
+  background-position: calc(var(--block-size) * -13px) 0;
+}
+
+.vehicleNewmotorcycles {
+  background-position: calc(var(--block-size) * -11px) 0;
+}
+.vehicleNewmotorcycleprices {
+  background-position: calc(var(--block-size) * -14px) 0;
+}
+
+.vehicleNewCarPrice {
+  background-position: calc(var(--block-size) * -16px) 0;
+}
+.vehicleUsedCarPrice {
+  background-position: calc(var(--block-size) * -17px) 0;
+}
+.vehicleChangeCarPrice {
+  background-position: calc(var(--block-size) * -15px) 0;
+}
+
+.vehicleCarMaintenance {
+  background-position: calc(var(--block-size) * -18px) 0;
+}
+.vehicleTowTruck {
+  background-position: calc(var(--block-size) * -19px) 0;
+}
+
+.vehicleSavedCars {
+  background-position: calc(var(--block-size) * -20px) 0;
+}
+.vehicleMyMaintenance {
+  background-position: calc(var(--block-size) * -21px) 0;
+}
+.vehicleElectric {
+  background-position: calc(var(--block-size) * -22px) 0;
+}
+.vehicleCredits {
+  background-position: calc(var(--block-size) * -23px) 0;
+}
+.vehicleMyAds {
+  --block-width: 26;
+  --block-height: 26;
+  --scale: 0.684; /* 26/38 */
+  background: var(--footer-nav);
+  width: calc(var(--block-width) * 1px);
+  height: calc(var(--block-height) * 1px);
+  background-repeat: no-repeat;
+  background-size: calc(228px * var(--scale)) auto;
+  background-position: calc(var(--block-width) * 5 * -1px)
+    calc(var(--block-height) * 1 * -1px);
+}

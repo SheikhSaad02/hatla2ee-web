@@ -1,0 +1,71 @@
+.breakout {
+  @apply relative ltr:left-1/2 w-dvw max-w-none ltr:-translate-x-1/2 rtl:right-1/2 rtl:translate-x-1/2;
+}
+
+.gradient-dark {
+  background: linear-gradient(
+    var(--grad-1, 180deg),
+    #3a76bf var(--grad-2, -24%),
+    #182433 var(--grad-3, 205%)
+  );
+}
+
+@media (max-width: 50rem) {
+  .gradient-dark {
+    --grad-1: 122.15deg;
+    --grad-2: 36.41%;
+    --grad-3: 129.11%;
+  }
+}
+
+.flipX {
+  @apply rtl:-scale-x-100;
+}
+
+.listing-banner {
+  background-image: var(--banner-image);
+}
+
+/* Imported unlayered, which is what lets these outrank the bg-cover and
+   bg-right utilities on the element. */
+.listing-banner-single-slot {
+  @media (width >= 48rem) {
+    justify-content: flex-end;
+    background-color: #20334b;
+    background-image: var(--banner-image-single-slot);
+    background-size: cover;
+    /* Top anchored so the cover crop falls on the empty lower half. */
+    background-position: center top;
+  }
+}
+
+.container {
+  width: min(
+    100% - var(--container-margin, 2rem),
+    var(--container-width, var(--container-6xl))
+  );
+  margin-inline: auto;
+
+  @media (width >= 85rem) {
+    --container-width: var(--container-6xl);
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.filterTab {
+  @apply flex flex-1 
+    first:rounded-ss-xl lg:first:rounded-ss-2xl
+    last:rounded-se-xl lg:last:rounded-se-2xl
+    data-[state=active]:bg-primary-50
+    lg:gap-2
+    max-lg:flex-col
+    max-lg:data-[state=inactive]:[&>div]:hidden;
+}
